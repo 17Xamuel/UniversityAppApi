@@ -59,7 +59,7 @@ app.post("/api/user/new", (req, res) => {
           { class_id, class_name: user_class },
           async (error) => {
             if (error) {
-              res.send("error");
+              res.send("Error");
               return;
             } else {
               let user_password = await bcrypt.hash(req.body.password, 2);
