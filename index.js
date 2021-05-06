@@ -4,11 +4,13 @@ const uuid = require("uuid");
 const bcrypt = require("bcryptjs");
 const app = express();
 
-const PORT = process.env.PORT || 8080;
+
+const PORT = process.env.PORT||8080;
 
 app.use(express.json());
 
 app.post("/api/user/new", (req, res) => {
+  console.log(req.body)
   const reg_no = req.body.reg_no ? req.body.reg_no : "";
   const user_course = reg_no.slice(10, 13).toUpperCase();
   const user_year = reg_no.slice(0, 2);
@@ -62,6 +64,7 @@ app.post("/api/user/new", (req, res) => {
               res.send("Error");
               return;
             } else {
+             
               let user_password = await bcrypt.hash(req.body.password, 2);
               let user_obj = {
                 user_id: uuid.v4(),
@@ -141,5 +144,6 @@ app.get("/api/users", (req, res) => {
   });
 });
 app.listen(PORT, () => {
+  
   console.log(`Server Started on port ${PORT}.....`);
 });
