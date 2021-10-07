@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.097954db.chunk.css",
+    "main.js": "/static/js/main.d24b0e3c.chunk.js",
+    "main.js.map": "/static/js/main.d24b0e3c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.7545a8a1.js",
+    "runtime-main.js.map": "/static/js/runtime-main.7545a8a1.js.map",
+    "static/css/2.1c344f42.chunk.css": "/static/css/2.1c344f42.chunk.css",
+    "static/js/2.34f8946c.chunk.js": "/static/js/2.34f8946c.chunk.js",
+    "static/js/2.34f8946c.chunk.js.map": "/static/js/2.34f8946c.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.1c344f42.chunk.css.map": "/static/css/2.1c344f42.chunk.css.map",
+    "static/css/main.097954db.chunk.css.map": "/static/css/main.097954db.chunk.css.map",
+    "static/js/2.34f8946c.chunk.js.LICENSE.txt": "/static/js/2.34f8946c.chunk.js.LICENSE.txt",
+    "static/media/africa.b67613f6.jpg": "/static/media/africa.b67613f6.jpg",
+    "static/media/doctor.26885907.png": "/static/media/doctor.26885907.png",
+    "static/media/line-awesome.css": "/static/media/la-solid-900.a8130346.svg",
+    "static/media/index.css": "/static/media/ubuntu-latin-ext-400-normal.a1317532.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7545a8a1.js",
+    "static/css/2.1c344f42.chunk.css",
+    "static/js/2.34f8946c.chunk.js",
+    "static/css/main.097954db.chunk.css",
+    "static/js/main.d24b0e3c.chunk.js"
+  ]
+}

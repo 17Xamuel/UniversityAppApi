@@ -10,6 +10,8 @@ app.use("/api/user/admin/", require("./api/admin"));
 app.use("/api/user/teacher/", require("./api/teacher"));
 app.use("/api/user/student/", require("./api/student"));
 
+app.use(express.static("client/build"));
+
 app.listen(PORT, () => {
   console.log(`Server started on port ${PORT}`);
 });
