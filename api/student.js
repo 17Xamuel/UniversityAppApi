@@ -6,12 +6,12 @@ router.post("/new", (req, res) => {
   conn.query(
     "SELECT * FROM students_table WHERE student_username = ?",
     username,
-    (error, res) => {
+    (error, username_check_res) => {
       if (error) {
         res.send({ data: "Error" });
         throw error;
       } else {
-        if (res.length > 0) {
+        if (username_check_res.length > 0) {
           res.send({ data: "Exits" });
         } else {
           conn.query(
