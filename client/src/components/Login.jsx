@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { TextField, Button, CircularProgress } from "@material-ui/core";
 import UsersApi from "../api/users";
-import Image from "../assets/doctor.png";
+import Image from "../assets/teacher.png";
 import Logo from "../assets/logo_hospital.png";
 import { Base64 } from "js-base64";
 //design
