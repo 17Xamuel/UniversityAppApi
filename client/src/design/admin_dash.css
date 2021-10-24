@@ -1,0 +1,6 @@
+.card-admin-dash-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}

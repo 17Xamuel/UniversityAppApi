@@ -35,7 +35,7 @@ class Admin extends Component {
             <Route path="/new-customer" exact component={NewCustomer} />
             <Route path="/new-user" exact component={NewUser} />
             <Route path="/new-purchase" exact component={NewPurchase} />
-            <Route path="/new-sale" exact component={NewClass} />
+            <Route path="/classes" exact component={NewClass} />
             <Route path="/all-products" exact component={AllProducts} />
             <Route path="/product" exact component={Product} />
             <Route path="/edit-product" exact component={Edit} />

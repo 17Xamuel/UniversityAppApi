@@ -118,7 +118,7 @@ class NewSale extends Component {
         <div className="main-content">
           <Header />
           <main>
-            <div className="recent-grid">
+            <div className="recent-grid-left">
               <div className="card">
                 <div className="card-header">
                   <h3>Classes</h3>

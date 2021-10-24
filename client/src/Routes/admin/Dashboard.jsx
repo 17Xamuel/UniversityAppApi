@@ -5,6 +5,9 @@ import Header from "./components/Header";
 import UsersApi from "../../api/users";
 import { Link } from "react-router-dom";
 
+//design
+import "../../design/admin_dash.css";
+
 class Dashboard extends Component {
   constructor(props) {
     super(props);
@@ -112,7 +115,7 @@ class Dashboard extends Component {
               <div className="projects">
                 <div className="card">
                   <div className="card-header">
-                    <h3>Classes</h3>
+                    <h3>A/Y Info</h3>
                     <Button
                       variant="contained"
                       color="primary"
@@ -120,7 +123,7 @@ class Dashboard extends Component {
                       aria-haspopup="true"
                       onClick={this.handleOpenActionsDrugs}
                     >
-                      More
+                      Actions
                       <span style={{ fontSize: "17.5px", marginLeft: "10px" }}>
                         <span className="las la-angle-down"></span>
                       </span>
@@ -135,55 +138,17 @@ class Dashboard extends Component {
                     >
                       <Link to="/new-product">
                         <MenuItem onClick={this.handleCloseActionsDrugs}>
-                          New Class
-                        </MenuItem>
-                      </Link>
-                      <Link to="/all-products">
-                        <MenuItem onClick={this.handleCloseActionsDrugs}>
-                          See All
+                          Semester
                         </MenuItem>
                       </Link>
                     </Menu>
                   </div>
                   <div className="card-body">
-                    <table width="100%">
-                      <thead>
-                        <tr>
-                          <td>Name</td>
-                          <td>students</td>
-                          <td></td>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>16/06/001</td>
-                          <td>Panadol</td>
-                          <td>
-                            <Button variant="contained" color="primary">
-                              Details
-                            </Button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>16/06/001</td>
-                          <td>Capsule</td>
-                          <td>
-                            <Button variant="contained" color="primary">
-                              Details
-                            </Button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>16/06/001</td>
-                          <td>Painex</td>
-                          <td>
-                            <Button variant="contained" color="primary">
-                              Details
-                            </Button>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
+                    <div className="card-admin-dash-info">
+                      <span>Academic Year: 2020/2021</span>
+                      <span>Semester: II</span>
+                      <span>Week: 9</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -198,7 +163,7 @@ class Dashboard extends Component {
                       aria-haspopup="true"
                       onClick={this.handleOpenActions}
                     >
-                      More
+                      Actions
                       <span style={{ fontSize: "17.5px", marginLeft: "10px" }}>
                         <span className="las la-angle-down"></span>
                       </span>
@@ -213,12 +178,17 @@ class Dashboard extends Component {
                     >
                       <Link to="/new-user">
                         <MenuItem onClick={this.handleCloseActions}>
-                          New User
+                          Users
                         </MenuItem>
                       </Link>
-                      <Link to="/">
+                      <Link to="/classes">
                         <MenuItem onClick={this.handleCloseActions}>
-                          All Users
+                          Classes
+                        </MenuItem>
+                      </Link>
+                      <Link to="/new-user">
+                        <MenuItem onClick={this.handleCloseActions}>
+                          Subjects
                         </MenuItem>
                       </Link>
                     </Menu>
