@@ -20,7 +20,7 @@ class Nav extends Component {
                   className="las la-clinic-medical"
                   style={{ fontSize: "32px" }}
                 ></span>
-                <span>Pharmacy</span>
+                <span>TheBeacon</span>
               </h2>
             </div>
             <div className="sidebar-menu">
@@ -38,7 +38,7 @@ class Nav extends Component {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/new-sale">
+                  <Link to="/classes">
                     <span
                       className={`${
                         this.props.active === "sale" ? "active" : ""
